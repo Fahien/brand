@@ -4,5 +4,16 @@
 
 @charset "utf-8";
 
+$sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.normal {
+    font-weight: normal;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

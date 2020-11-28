@@ -6,6 +6,8 @@
 
 $primary-color: #11263c;
 $secondary-color: #45babd;
+$secondary-background-color: #18385f;
+$third-color: #0476aa;
 
 $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
@@ -34,14 +36,41 @@ $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+.archive__item {
+  background-color: $secondary-background-color;
+  color: $background-color;
+  border-radius: 0.5em;
+  padding: 1em;
+  background-image: url('{{ site.baseurl }}/assets/images/mc-back.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: 50%;
+  background-position-x: 110%;
+}
+
+.archive__item .category {
+  display: block;
+  text-align: right;
+}
+
+.archive__item .category a {
+  padding: 0px 8px 2px 8px;
+  border-radius: 0.5em;
+  border: 0px;
+  background-color: $third-color;
+  color: $background-color;
+  text-transform: uppercase;
+  font-size: $type-size-8;
+}
+
+.archive__item .page__meta {
+  color: $background-color;
+}
+
 .page__footer {
   background-color: $primary-color;
   color: $background-color;
 }
-
-//.page__footer-logo .site-logo {
-//  display: inline-block;
-//}
 
 .page__footer-logo .site-title {
   display: inline-block;

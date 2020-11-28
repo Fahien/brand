@@ -4,6 +4,9 @@
 
 @charset "utf-8";
 
+$primary-color: #11263c;
+$secondary-color: #45babd;
+
 $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 
@@ -14,6 +17,20 @@ $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
 .normal {
     font-weight: normal;
 }
+
+.site-subtitle {
+  position: relative;
+  left: -20px;
+  top: -6px;
+}
+
+.site-subtitle .normal {
+  color: $secondary-color;
+  position: relative;
+  left: 14px;
+  top: -5px;
+}
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

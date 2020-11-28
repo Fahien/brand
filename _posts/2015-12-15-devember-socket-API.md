@@ -1,6 +1,7 @@
 ---
 toc: true
 toc_sticky: true
+category: lab
 ---
 This devlog introduces the fundamental functions of the [Berkeley socket API](https://en.wikipedia.org/wiki/Berkeley_sockets) by developing a simple client and server with the C language. The complete source code is available on this [github repository](https://github.com/Fahien/exsocket).
 

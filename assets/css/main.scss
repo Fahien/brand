@@ -31,6 +31,43 @@ $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
   top: -5px;
 }
 
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__footer {
+  background-color: $primary-color;
+  color: $background-color;
+}
+
+//.page__footer-logo .site-logo {
+//  display: inline-block;
+//}
+
+.page__footer-logo .site-title {
+  display: inline-block;
+}
+
+.page__footer-logo .site-subtitle {
+  font-size: $type-size-8;
+  position: relative;
+  left: -14px;
+  top: 4px;
+}
+
+.page__footer-logo .site-subtitle .normal {
+  color: $background-color;
+}
+
+.page__footer-copyright {
+  font-size: $type-size-8;
+  padding-top: 1.5em;
+}
+
+.page__footer-follow li {
+  display: block;
+  padding: 0;
+}
+
+.page__footer-follow li+li:before {
+  padding-right: 0;
+}

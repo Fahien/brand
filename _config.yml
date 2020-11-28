@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Multidimensional Code"
 title_separator          : "-"
 subtitle                 : "Multidimensional Code" # site tagline that appears below site title in masthead
-name                     : "Multidimensional Code"
+name                     : "Antonio Caggiano"
 description              : "Notes and thoughts of an open-source graphics-software engineer."
 url                      : "https://www.antoniocaggiano.eu"
 baseurl                  : # the subpath of your site, e.g. "/blog"

@@ -1,8 +1,9 @@
 <div class="entries-list">
 
 <div class="page__footer-logo grid__item">
-  {% unless logo_path == empty %}
-    <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
+  {% capture logo_inverse %}{{ site.logo_inverse }}{% endcapture %}
+  {% unless logo_inverse == empty %}
+    <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_inverse | relative_url }}" alt=""></a>
   {% endunless %}
   <a class="site-title" href="{{ '/' | relative_url }}">
     {{ site.masthead_title | default: site.title }}

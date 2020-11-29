@@ -22,15 +22,15 @@ $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
 
 .site-subtitle {
   position: relative;
-  left: -20px;
-  top: -6px;
+  left: -1.5em;
+  top: -0.5em;
 }
 
 .site-subtitle .normal {
   color: $secondary-color;
   position: relative;
-  left: 14px;
-  top: -5px;
+  left: 1em;
+  top: -0.3em;
 }
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -79,8 +79,8 @@ $sans-serif: -apple-system, Seravek, "Roboto", "Segoe UI",
 .page__footer-logo .site-subtitle {
   font-size: $type-size-8;
   position: relative;
-  left: -14px;
-  top: 4px;
+  left: -1em;
+  top: 0.1em;
 }
 
 .page__footer-logo .site-subtitle .normal {
